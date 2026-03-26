@@ -1,0 +1,12 @@
+---
+include:
+  - board: nice_nano_v2          # Change to nice_nano if you use v1
+    shield: my5x6
+    # shield: my5x6_left           # Uncomment if you have split left/right
+    # shield: my5x6_right
+
+  # If it's a split keyboard, add both sides:
+  # - board: nice_nano_v2
+  #   shield: my5x6_left
+  # - board: nice_nano_v2
+  #   shield: my5x6_right
