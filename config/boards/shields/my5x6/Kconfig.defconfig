@@ -3,6 +3,6 @@
 if SHIELD_WF_KEY
 
 config ZMK_KEYBOARD_NAME
-    default "WF Key"
+    default "WF_Key"
 
 endif
