@@ -1,2 +1,2 @@
-config SHIELD_wf key
-    def_bool $(shields_list_contains,wf key)
+config SHIELD_WF_KEY
+    def_bool $(shields_list_contains,wf_key)
