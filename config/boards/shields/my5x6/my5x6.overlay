@@ -19,13 +19,14 @@
             ;
 
         // Columns are the inputs. They need the PULL_DOWN to stay low until a key is pressed.
-        col-gpios
-            = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            ;
+        // Columns are reversed to fix the mirroring issue
+col-gpios
+    = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 0 (Old Col 5)
+    , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 1 (Old Col 4)
+    , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 2 (Old Col 3)
+    , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 3 (Old Col 2)
+    , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 4 (Old Col 1)
+    , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // New Col 5 (Old Col 0)
+    ;
     };
 };
