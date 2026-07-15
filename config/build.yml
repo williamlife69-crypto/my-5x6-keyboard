@@ -1,7 +1,7 @@
 ---
 include:
   - board: nice_nano_v2          # Change to nice_nano if you use v1
-    shield: my5x6
+    shield: wf key
     # shield: my5x6_left           # Uncomment if you have split left/right
     # shield: my5x6_right
 
