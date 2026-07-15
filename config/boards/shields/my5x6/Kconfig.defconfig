@@ -1,0 +1,8 @@
+# config/boards/shields/wf_key/Kconfig.defconfig
+
+if SHIELD_WF_KEY
+
+config ZMK_KEYBOARD_NAME
+    default "WF Key"
+
+endif
